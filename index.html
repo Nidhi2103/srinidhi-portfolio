@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:1800px)" href="tablet.css">-->
+     <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css"> 
+</head>
+<body>
+    
+    <!-- <nav class="navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact-form">CONTACT</a></li>
+        </ul>
+    </nav> -->
+
+    <header class="header">
+        <a href="#" class="logo">PORTFOLIO.</a>
+        <nav class="navbar">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#contact-form">CONTACT</a>
+        </nav>
+      </header>
+
+    <section id="home">
+        <div class="main">
+            <h3><i>Hello,</i></h3>
+
+            <h1>I'm <span> Chelapally<br>
+                Srinidhi<br></span></h1>
+            <!-- <h1 class="headings">HELLO,<br>I AM <br>CHELAPALLY SRINIDHI</h1> -->
+            <p >SOFTWARE UNDERGADUATE</p>
+        </div>
+    </section>
+
+    <section id="about">
+            <!-- <h1 class="headings">ABOUT ME</h1> -->
+            <div class="about-img">
+            <img src="./m.jpg" alt="me">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2><br><br>
+                <!-- <h3>Chelapally Srinidhi</h3> -->
+                <p>
+                    I am <i><b><span>Srinidhi</span></b></i> a passionate and dedicated Computer Science student with a strong foundation in programming, data structures, and algorithms.
+                    My interests lie in web development, UI/UX design, and artificial intelligence & machine learning (AI/ML).
+                    I enjoy building intuitive, user-friendly web applications and exploring innovative AI-driven solutions. 
+                    With a problem-solving mindset and a keen eye for design, I strive to create impactful digital experiences.
+                    I am always eager to learn, experiment with new technologies, and refine my skills to stay ahead in the ever-evolving tech landscape.
+                </p>
+                <a href="https://drive.google.com/drive/folders/1AFkXFpi_WSDQ7z4FLzovw0h6tJnbLMXC?usp=sharing" target="_blank" class="btn-view-resume">View Resume</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section id="projects">
+        <h1 class="headings">PROJECTS</h1>
+        <div class="row">
+            <div class="box">
+            <h3 class="head1">MAIZE DISEASE PREDING USING RESNET AND NLP</h3>
+            <p>This project develops a Maize Crop Disease Prediction System using deep learning to help farmers detect diseases early and improve agricultural productivity.
+                 It identifies common maize diseases like Grey Leaf Spot, Northern Corn Leaf Blight, and Common Rust using CNN (ResNet-50) for image-based detection and NLP (LSTM) 
+                 for text-based symptom analysis. The system allows users to input either images or text for accurate disease prediction, promoting sustainable agriculture and food 
+                 security.</p> -->
+              <!-- <a href="www.python.com">LINK</a>  -->
+              <!-- <img src="./prj1.png" width="200px" alt="prj1">
+            </div>
+            <div class="box">
+                <h3 class="head1">SIMPLE TO DO LIST USING JAVA</h3>
+                <p>This To-Do List application is built using Java Swing, allowing users to add, remove, complete, and save tasks efficiently.
+                     It features a simple UI with a task list, input field, and buttons for easy task management.
+                      Tasks are saved in a file (`tasks.txt`) and automatically loaded on startup, ensuring continuity.
+                       The project showcases GUI development and file handling in Java.</p><br>
+                  <div class="video-container">
+                    <iframe width="450" height="315" src="./prj2 copy.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>  
+            </div>
+        </div>
+    </section> -->
+
+    <section class="projects" id="projects">
+        <h2 class="headings">MY PROJECTS</h2>
+        <div class="row">
+            <div class="box">
+                <img src="./prj1 copy.png" alt="projectImage" class="project-image"><br>
+                <h3>Maize Leaf Disease Detection Using LSTM and ResNet</h3><br>
+                <p>This project aims to predict maize crop diseases early using deep learning techniques like CNN and NLP, ensuring accurate detection through image or text inputs. By enabling timely diagnosis.</p>
+                <a href="#" class="button" onclick="location.href='https://github.com/Nidhi2103/minorproject16.git'">View Project</a>
+            </div>
+
+            <div class="box">
+                <img src="./todolist.jpg" alt="todolist" class="project-image"><br>
+                <h3>Simple-ToDoList</h3><br>
+                <p>This project is a simple Java Swing-based To-Do List application that allows users to add, complete, remove, and save tasks. It helps manage daily tasks efficiently by storing them locally in a text file for future access.</p><br>
+                <a href="#" class="button" onclick="location.href='https://github.com/Nidhi2103/Simple-ToDoList.git'">View Project</a>
+            </div>
+
+            <div class="box">
+                <img src="./resumebuilder.webp" alt="resumebuilder" class="project-image"><br>
+                <h3>Resume Builder Website</h3><br>
+                <p>Developed a Resume Builder website using HTML, CSS, JavaScript, and Firebase that allows users to create, generate, and download resumes in PDF format. Integrated an ATS score checker to evaluate resume quality and improve job application success.</p><br>&nbsp;
+                <a href="#" class="button" onclick="location.href='https://github.com/Nidhi2103/Resume-Builder.git'">View Project</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+<section  id="contact-form" class="contact-form">
+    <h2 class="contact-me"><br><br>CONTACT</h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" 
+        placeholder="Full Name">
+        <input type="email" 
+        placeholder="Email">
+      </div>
+
+      <div class="input-box">
+        <input type="tel" pattern="[0-9]{10}" required maxlength="10" placeholder="Phone Number">
+
+      </div>
+
+      <textarea name="" id=""  cols="30"
+      rows="10" placeholder="Your Message"></textarea><br><br>
+      <input type="submit" value="Send Message"
+      class="btn-1">
+      
+
+
+    </form>
+
+</section>
+
+<section class="contact-info">
+    <h2>Get in Touch</h2>
+
+    <p>Mail to:<a href="mailto:ch.srinidhi2004@gmail.com">Email</a></p>
+
+    <div class="social-links">
+        <a href="https://github.com/Nidhi2103" target="_blank" class="github">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/ch-srinidhi-743248259" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <p>&copy; 2025 SRINIDHI. All Rights Reserved.</p>
+
+    <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
