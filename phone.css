@@ -7,12 +7,15 @@
 
 /* Navbar */
 .navbar {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 10px 0;
+    align-items: center;
+    padding: 2px 0;
 }
 
 .navbar ul {
+    list-style: none;
+    display: flex;
     flex-direction: column;
     padding: 0;
 }
@@ -22,50 +25,83 @@
 }
 
 .navbar ul li a {
-    font-size: 0.9rem;
-    padding: 8px 10px;
+    font-size: 1rem;
+    padding: 8px 12px;
+    text-decoration: none;
 }
 
 /* Home Section */
+/* Home Section */
 #home {
     height: auto;
-    padding: 40px 15px;
+    padding: 40px 5%;
     text-align: center;
+    box-sizing: border-box; /* Ensure padding does not cause overflow */
 }
 
 .main h3 {
-    font-size: 24px;
+    font-size: 1.2rem;
 }
 
 .main h1 {
-    font-size: 40px;
+    font-size: 2.2rem;
     line-height: 1.2;
 }
 
 .main p {
-    font-size: 14px;
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
 }
+
+/* Responsive for Phones */
+@media (max-width: 530px) {
+    #home {
+        padding: 20px 5%; /* Adjust padding for smaller screens */
+    }
+
+    .main h3 {
+        font-size: 1rem; /* Reduce font size for small screens */
+    }
+
+    .main h1 {
+        font-size: 1.6rem; /* Adjust font size for smaller screens */
+    }
+
+    .main p {
+        font-size: 0.9rem; /* Make the paragraph text smaller */
+        max-width: 100%; /* Allow paragraph to take full width */
+    }
+
+    .main {
+        padding: 0 10px; /* Add some padding inside .main to prevent content from touching edges */
+    }
+}
+
 
 /* About Section */
 #about {
+    display: flex;
     flex-direction: column;
-    padding: 30px 15px; /* Reduced padding */
+    align-items: center;
+    padding: 30px 5%;
     text-align: center;
 }
 
-
 .about-content {
     margin-top: -75px;
+    max-width: 90%;
 }
 
 .about-img img {
-    width: 250px;
-    margin-bottom: 1px; 
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 1px;
 }
 
 .about-content h2 {
-    font-size: 50px; /* Slightly reduced */
-    margin-top: 0; /* Prevent extra space */
+    font-size: 2.5rem;
+    margin-top: 0;
 }
 
 .about-content p {
@@ -74,55 +110,120 @@
 
 /* Projects Section */
 .row {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 5%;
+    gap: 20px;
 }
 
 .box {
     width: 95%;
     height: auto;
     padding: 12px;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
-.box:hover{
+.box:hover {
     background-position: left bottom;
-    color:white;
+    color: white;
     border: none;
     box-shadow: 0 0 20px rgb(181, 31, 236);
 }
 
-
-.box img{
-    width: 250px;
-    height: 100px;
+.box img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
     background-color: white;
     padding: 10px;
 }
 
 /* Contact Form */
 .contact-form {
-    padding: 30px 15px;
+    padding: 30px 5%;
     text-align: center;
 }
 
 .input-box {
+    display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.input-box input {
+.input-box input,
+.input-box textarea {
     width: 100%;
-    margin-bottom: 8px;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 /* Footer */
 .footer {
     text-align: center;
+    padding: 20px;
 }
 
 .footer-links {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .footer-links a {
     margin: 5px 0;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 5%;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .navbar ul li {
+        margin: 0 12px;
+    }
+
+    #about {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about-content {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .input-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input-box input {
+        width: 48%;
+    }
+
+    .footer-links {
+        flex-direction: row;
+    }
 }
